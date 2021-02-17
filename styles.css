@@ -127,13 +127,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*
-End of CSS reset
-*/
+/* End of CSS reset */
 
 html {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition-delay: 2s;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 section {
@@ -142,19 +150,32 @@ section {
 }
 #main-section {
   color: white;
-  background-image: url("./images/adf-wide.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/adf-wide.jpg");
   background-color: black;
   background-size: cover;
   background-position: center;
   text-align: left;
+  width: 100%;
+  min-height: 50vh;
+}
+
+#main-section p {
+  margin: 20px 0px;
 }
 
 #event-section {
   color: white;
-  background-image: url("./images/gallery-preaching.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/gallery-preaching.jpg");
   background-color: black;
   background-size: cover;
   background-position: center;
+  min-height: 33vh;
+}
+
+#event-section p {
+  margin: 20px 0px 30px 0px;
 }
 
 .transp-white-button {
@@ -202,7 +223,7 @@ h1 {
 
 h2 {
   font-size: 2em;
-  margin: 1em;
+  margin: 1em 0em;
 }
 
 p {
@@ -219,4 +240,44 @@ p {
   justify-content: center space-evenly;
   align-items: flex-start;
   margin: 30px 0px;
+}
+
+#contact-text {
+  flex: 0 1 auto;
+  padding: 10px;
+  border-right: 2px solid grey;
+}
+
+#contact-form {
+  padding: 10px;
+  flex: 3 1 auto;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header img {
+  max-height: 100%;
+  max-width: auto;
+  flex: 1 1 auto;
+  align-self: center;
+}
+
+header h1 {
+  flex: 1 1 auto;
+  align-self: center;
+}
+
+header nav {
+  flex: 3 1 auto;
+  align-self: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
 }

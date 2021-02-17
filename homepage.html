@@ -3,7 +3,7 @@
 <html>
   <head>
     <title>MakeNew - Inspire. Worship. Make. /</title>
-    <link rel="shortcut icon" href="./images/makenew-logo.png" />
+    <link rel="shortcut icon" href="./images/makenew-logo-nobg.png" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -13,18 +13,24 @@
   </head>
 
   <body>
-    <h1>Makenew</h1>
-    <h2>Inspire. Worship. Make. //</h2>
+    <header>
+      <img src="./images/makenew-logo-nobg.png" alt="MakeNew logo" />
+      <h1>Makenew Inspire. Worship. Make. //</h1>
 
-    <navbar>
-      <a href="">Online Church</a>
-      <a href="">About</a>
-      <a href=""> Resources</a>
-    </navbar>
-
-    <navbar>
-      <a href=""></a>
-    </navbar>
+      <nav id="top-nav">
+        <ul>
+          <li>
+            <a href="">Online Church</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href=""> Resources</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <section id="main-section">
       <h2 id="tagline">
@@ -79,22 +85,23 @@
           <p class="quoted">- Kate c/o 2021</p>
         </div>
       </div>
-
-      <button class="gold-button">
-        See more reviews that are mostly blocked by Yelp's algorithm
-      </button>
+      <a href="https://www.yelp.com/biz/makenew-durham">
+        <button class="gold-button">
+          See more reviews that are mostly blocked by Yelp's algorithm
+        </button>
+      </a>
     </section>
 
-    <section jd="contact-section">
-      <div class="horizontal-container">
-        <div>
+    <section id="contact-section">
+      <div class="horizontal-container" id="contact-container">
+        <div id="contact-text">
           <h2>Get in touch</h2>
           <p>
             To find out more info, text us at (413) MAKENEW (625-3639) or use
             the form.
           </p>
         </div>
-        <div>
+        <div id="contact-form">
           <form action="">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" /><br />
@@ -141,11 +148,11 @@
       </div>
     </section>
     <footer>
-      <navbar>
+      <nav>
         <a href="">Online Church</a>
         <a href="">About</a>
         <a href="">Resources</a>
-      </navbar>
+      </nav>
     </footer>
   </body>
 </html>
