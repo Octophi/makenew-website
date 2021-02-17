@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+End of CSS reset
+*/
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+section {
+  padding: 8%;
+  text-align: center;
+}
+#main-section {
+  color: white;
+  background-image: url("./images/adf-wide.jpg");
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+}
+
+#event-section {
+  color: white;
+  background-image: url("./images/gallery-preaching.jpg");
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+
+.transp-white-button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+#quote-header {
+  font-size: 2em;
+  text-align: center;
+}
+
+.review {
+  border-right: 1px solid grey;
+}
+
+.review:last-child {
+  border-right: none;
+}
+
+.review .quote {
+  font-weight: bold;
+}
+
+.gold-button {
+  text-align: center;
+  color: white;
+  background-color: gold;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 1px solid gold;
+  padding: 10px;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 1em;
+}
+
+p {
+  margin: 10px;
+}
+
+#tagline {
+  line-height: 150%;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center space-evenly;
+  align-items: flex-start;
+  margin: 30px 0px;
+}
