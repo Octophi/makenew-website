@@ -153,10 +153,9 @@ section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/adf-wide.jpg");
   background-color: black;
-  background-size: cover;
+  background-size: 100% auto cover;
   background-position: center;
   text-align: left;
-  width: 100%;
   min-height: 65vh;
 }
 
@@ -228,7 +227,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 3em;
   margin: 1em 0em;
 }
 
@@ -291,8 +290,7 @@ nav ul {
 
 nav ul li {
   padding: 5px;
-  border-left: 1px solid grey;
-  margin: 5px;
+  margin: 0px 5px;
   text-align: center;
 }
 
@@ -305,6 +303,12 @@ footer nav {
   justify-content: flex-end;
 }
 
-footer nav a {
+footer nav div ul li a {
   color: white;
+}
+
+footer nav img {
+  max-height: 50px;
+  object-fit: contain;
+  filter: invert(100%);
 }
