@@ -129,6 +129,9 @@ table {
 }
 /* End of CSS reset */
 
+* {
+  box-sizing: border-box;
+}
 html {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -157,7 +160,7 @@ section {
   background-position: center;
   text-align: left;
   min-height: 65vh;
-  padding: 10% 20% 0% 20%;
+  padding: 10% 20% 10% 20%;
 }
 
 #main-section p {
@@ -312,4 +315,42 @@ footer nav img {
 
 .bold {
   font-weight: 600;
+}
+
+.form-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form-entry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+textarea {
+  min-height: 7em;
+  width: 100%;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input[type="email"] {
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
